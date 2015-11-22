@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2>Hata Sayfası</h2>
+
+@if (ViewData.Model!=null)
+{
+    <span>Controller : @ViewData.Model.ControllerName</span><br />
+    <span>ActionName : @ViewData.Model.ActionName</span><br />
+    <span>Exception : @ViewData.Model.Exception.Message</span><br />
+}
